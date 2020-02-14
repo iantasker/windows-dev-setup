@@ -7,12 +7,12 @@ export WIN_USER="$(echo -e `powershell.exe '$env:UserName'` | sed -e 's/^[[:spac
 
 cp "/c/Users/${WIN_USER}/.gitconfig" "/home/${USER}/.gitconfig"
 
-sudo mkdir -p "/c/Users/${WIN_USER}/.ssh"
-ln -sf "/c/Users/${WIN_USER}/.ssh" "/home/${USER}/"
-
 if [ -f "/c/Users/${WIN_USER}/.ssh/id_rsa.pub" ]; then
   echo "Found SSH key!"
+  ln -sf "/c/Users/${WIN_USER}/.ssh" "/home/${USER}/"
 else
+  sudo mkdir -p "/c/Users/${WIN_USER}/.ssh"
+  ln -sf "/c/Users/${WIN_USER}/.ssh" "/home/${USER}/"
   echo "No SSH key found, creating..."
   ssh-keygen -t rsa -b 4096 -C "${GIT_EMAIL}"
   eval $(ssh-agent -s)
