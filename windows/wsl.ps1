@@ -1,3 +1,4 @@
+$defaultPath = "c:\dev"
 $reposPath = "C:\dev\repos\personal\"
 $distroPaths = "C:\dev\distros\"
 
