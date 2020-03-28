@@ -8,14 +8,14 @@ chsh -s $(which zsh)
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 ### Powerline Fonts
-git clone --depth 1 git@github.com:powerline/fonts.git /tmp/powerline-fonts
+git clone --depth 1 https://github.com/powerline/fonts.git /tmp/powerline-fonts
 /tmp/powerline-fonts/install.sh
 mkdir -p /c/dev/fonts/PowerlineFonts
 cp $HOME/.local/share/fonts/*.ttf /c/dev/fonts/PowerlineFonts
 rm -rf /tmp/powerline-fonts
 
 ### Nerd Fonts
-git clone --depth 1 git@github.com:ryanoasis/nerd-fonts.git /tmp/nerd-fonts
+git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git /tmp/nerd-fonts
 /tmp/nerd-fonts/install.sh --ttf --clean
 fc-cache -f -v
 mkdir -p /c/dev/fonts/NerdFonts
@@ -36,5 +36,5 @@ EOL
 
 tee $HOME/.shellrc <<EOL
 # Let cd look in /c/dev/assembly by default
-export CDPATH=.:~:/c/dev/personal
+export CDPATH=.:~:/c/dev/repos/personal
 EOL
