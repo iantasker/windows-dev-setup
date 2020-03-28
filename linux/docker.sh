@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export DOCKER_CHANNEL=edge
-export DOCKER_COMPOSE_VERSION=1.22.0
+export DOCKER_COMPOSE_VERSION=1.25.4
 sudo apt-get update
 sudo apt-get install \
     apt-transport-https \

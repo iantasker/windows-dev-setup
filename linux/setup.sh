@@ -15,7 +15,7 @@ sudo apt-get -y install \
   build-essential \
   apt-transport-https \
   ca-certificates \
-  curl
+  curl \
   composer \
   software-properties-common \
   postgresql \

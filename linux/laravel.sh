@@ -2,14 +2,13 @@
 
 sudo apt-get -y install \
   php-json \
-  php-mcrypt
   php-mbstring \
   php-token-stream \
-  php-zip \
+  php7.2-zip \
   php-json \
   php-xml \
   php-gd \
-  php-opcache \
+  php7.2-opcache \
   php-curl \
   php-gettext \
   php-mysql
