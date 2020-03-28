@@ -36,8 +36,8 @@ tee -a $HOME/.zshrc <<EOL
 EOL
 
 tee $HOME/.shellrc <<EOL
-# Let cd look in /c/dev/assembly by default
-export CDPATH=.:~:/c/dev/personal
+# Let cd look in /c/dev/repos/personal by default
+export CDPATH=.:~:/c/dev/repos/personal
 EOL
 
 tee -a $HOME/.bashrc <<EOL
