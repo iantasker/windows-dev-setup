@@ -15,5 +15,6 @@ sudo apt-get -y install \
 
 composer global require laravel/installer
 composer global require laravel/spark-installer
+composer global require laravel/vapor-cli
 
 sudo apt-get clean
