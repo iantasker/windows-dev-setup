@@ -10,6 +10,7 @@ cp "/c/Users/${WIN_USER}/.gitconfig" "/home/${USER}/.gitconfig"
 if [ -f "/c/Users/${WIN_USER}/.ssh/id_rsa.pub" ]; then
   echo "Found SSH key!"
   ln -sf "/c/Users/${WIN_USER}/.ssh" "/home/${USER}/"
+  chmod 600 ~/.ssh/id_rsa
 else
   sudo mkdir -p "/c/Users/${WIN_USER}/.ssh"
   ln -sf "/c/Users/${WIN_USER}/.ssh" "/home/${USER}/"
