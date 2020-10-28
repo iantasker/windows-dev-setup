@@ -66,7 +66,8 @@ sudo apt-get -y install \
   bison \
   libmysqlclient-dev \
   libedit-dev \
-  libonig-dev
+  libonig-dev \
+  re2c
 
 tee $HOME/.shellrc <<EOL
 # Include .config/composer/vendor/bin in path
