@@ -15,23 +15,23 @@ Open the tool "PowerShell ISE" as an **Administrator**. There will be times you 
 2. Download and configure windows features
 
 	```Powershell
-	Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://github.com/iantasker/windows-dev-setup/configure-windows-features.ps1'))
+	Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/iantasker/windows-dev-setup/master/windows/configure-windows-features.ps1'))
 	```
 
 3. Download and install chocolatey
 
 	```Powershell
-	Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://github.com/iantasker/windows-dev-setup/chocolatey.ps1'))
+	Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/iantasker/windows-dev-setup/master/windows/chocolatey.ps1'))
 	```	
 
 4. Download and install git
 
 	```Powershell
-	Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://github.com/iantasker/windows-dev-setup/git.ps1'))
+	Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/iantasker/windows-dev-setup/master/windows/git.ps1'))
 	```	
 	
 5. Download and install wsl
 
 	```Powershell
-	Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://github.com/iantasker/windows-dev-setup/wsl.ps1'))
+	Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/iantasker/windows-dev-setup/master/windows/wsl.ps1'))
 	```	

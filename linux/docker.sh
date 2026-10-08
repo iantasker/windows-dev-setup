@@ -2,6 +2,8 @@
 
 export DOCKER_CHANNEL=edge
 export DOCKER_COMPOSE_VERSION=1.25.4
+export DOCKER_HOST=tcp://0.0.0.0:2375
+
 sudo apt-get update
 sudo apt-get install \
     apt-transport-https \
